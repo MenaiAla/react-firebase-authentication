@@ -1,3 +1,10 @@
 import React from 'react';
-const App = () => (<div> <h1>App</h1> </div>);
+import { BrowserRouter as Router } from "react-router-dom"
+import { Navigation } from "../Navigation"
+import Routing from "../../routing"
+const App = () => (
+    <Router>
+        <Navigation />
+        <Routing />
+    </Router>)
 export default App
