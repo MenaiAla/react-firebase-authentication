@@ -1,3 +1,9 @@
-import React from "react"
-const ForgetPassword = () => (<p>ForgetPassword</p>)
-export default ForgetPassword
+import React from 'react';
+import PasswordForgetForm from "../../components/password-forget"
+const PasswordForgetPage = () => (
+    <div
+        className="flex items-center justify-center py-8">
+        <PasswordForgetForm />
+    </div>)
+
+export default PasswordForgetPage
