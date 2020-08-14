@@ -1,20 +1,10 @@
-const configDevelopment = {
-
-    apiKey: process.env.REACT_APP_API_KEY,
-    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
-    databaseURL: process.env.REACT_APP_DATABASE_URL,
-    projectId: process.env.REACT_APP_PROJECT_ID,
-    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
-    messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
-}
-
-const configPoduction = {
-
-    apiKey: process.env.REACT_APP_API_KEY,
-    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
-    databaseURL: process.env.REACT_APP_DATABASE_URL,
-    projectId: process.env.REACT_APP_PROJECT_ID,
-    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
-    messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
-}
-export const config = process.env.NODE_ENV === "production" ? configPoduction : configDevelopment
+export const config = {
+    apiKey: "AIzaSyC9eABwujyTzLqJdcEufCw1tflEHHEans8",
+    authDomain: "react-authentication-adb73.firebaseapp.com",
+    databaseURL: "https://react-authentication-adb73.firebaseio.com",
+    projectId: "react-authentication-adb73",
+    storageBucket: "react-authentication-adb73.appspot.com",
+    messagingSenderId: "27359851197",
+    appId: "1:27359851197:web:ea7a24b116a2b0720ffdd4",
+    measurementId: "G-D8W142VJEL"
+};
