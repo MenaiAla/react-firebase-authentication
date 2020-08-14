@@ -1,13 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './components/App/index'
+import App from './app/index'
 import * as serviceWorker from './serviceWorker';
+import Firebase, { FirebaseContext } from './firebase';
+import "./assets/main.css"
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <FirebaseContext.Provider value={new Firebase()}>
+      <App />
+    </FirebaseContext.Provider>,
+  </React.StrictMode >
+  ,
   document.getElementById('root')
 );
 
